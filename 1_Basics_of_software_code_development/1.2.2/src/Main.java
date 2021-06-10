@@ -12,7 +12,8 @@ public class Main {
         }
         else if (a > b && c > d && b > d) {
             System.out.println(b);
-
+        }else {
+            System.out.println(c);
         }
     }
 }
