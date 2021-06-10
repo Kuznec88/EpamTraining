@@ -2,18 +2,34 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int a = 255;
+
+        int a = 787;
         int b = 455;
-        int c = 555;
+        int c = 515;
         int d = 777;
 
-        if (a < b && c < d && a > c) {
-            System.out.println(a);
+        int min;
+        int min1;
+
+
+        if (a < b) {
+            min = a;
+            System.out.println("Минимальное число из пары " + min);
+        } else {
+            min = b;
+            System.out.println("Минимальное число из пары " + min);
         }
-        else if (a > b && c > d && b > d) {
-            System.out.println(b);
-        }else {
-            System.out.println(c);
+        if (c < d) {
+            min1 = c;
+            System.out.println("Минимальное число из пары " + min1);
+        } else {
+            min1 = d;
+            System.out.println("Минимальное число из пары " + min1);
+        }
+        if(min > min1){
+                System.out.println("Максимальное число из 2-х пар: " + min);
+        } else {
+                System.out.println("Максимальное число из 2-х пар: " + min1);
         }
     }
 }
@@ -22,7 +38,9 @@ public class Main {
 /*
 
     Т.к задача подразумевает ветвление сделал ее так,
-    но в данной ситуации было бы логичнее делать ее представленным ниже способом
+    но в данной ситуации было бы логичнее делать ее представленным ниже способом.
+    Так же в решении выше можно было сделать сканнер, но решил не делать т.к показал его ниже и
+    в предыдущих задачах.
 
 for (; ; ) {
 
