@@ -1,0 +1,8 @@
+
+
+CREATE TABLE users (
+num INTEGER PRIMARY KEY AUTOINCREMENT,
+id INTEGER (10),
+name VARCHAR (50),
+task VARCHAR (200),
+project VARCHAR(50));
